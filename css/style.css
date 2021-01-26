@@ -6,6 +6,9 @@ body{
 	color:333;
 	/*font-family: 'Titillium Web', sans-serif;*/
     font-family: 'Nunito', sans-serif;
+   /* background: url(../image/slider1.jpg); */
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 .bg-dark {
     background-color: #000000!important;
@@ -28,7 +31,10 @@ a:hover{
     background: #000;
     border-bottom: 4px solid #ffc800;
 }*/
-
+.color_yellow{
+    color: #ffc800;
+    font-weight: 600;
+}
 
 
 
@@ -57,7 +63,8 @@ a:hover{
     font-weight: 600;
 }
 .sliderr {
-    background: url(../image/slider1.jpg);
+    background: url(../image/slider4.jpg);
+    /*background: #060709;*/
     height: 750px;
     background-size: cover;
     background-attachment: scroll;
@@ -82,6 +89,9 @@ a:hover{
     font-weight: 700;
     text-transform: uppercase !important;
 }
+.navarea .navbar-nav .nav-item a:focus{
+    color: #000;
+}
 .navarea .navbar-brand:hover{
     color: #000 !important;
 }
@@ -101,13 +111,6 @@ a:hover{
     background: rgb(0 0 0 / 58%);
     z-index: -1;
 }*/
-
-
-
-
-
-
-
 
 
 
@@ -169,6 +172,9 @@ a:hover{
 .padding-80{
     padding: 80px 0;
 }
+.no_padding_bottom{
+    padding-bottom: 0px;
+}
 .padding-bottom-80{
     padding-bottom: 80px;
 }
@@ -228,7 +234,9 @@ p {
     transform: scale(1.1);
     transition: all .4s ease-in-out;
 }
-
+.title_section{
+    margin-bottom: 50px;
+}
 .title_section h2 {
     font-weight: 700;
     text-transform: uppercase;
@@ -317,6 +325,8 @@ p {
 }
 .vaultImg img {
     transition: all .4s ease-in-out;
+    width: 270px;
+    margin-bottom: 30px;
 }
 .vaultImg img:hover {
     transform: scale(1.1);
@@ -330,8 +340,9 @@ p {
     overflow: hidden;
     margin-bottom: 30px;
     position: relative;
-    border-bottom: 4px solid #0d1123;
+    border-bottom: 4px solid #c82525;
     border-radius: 5px;
+    background: #fff;
 }
 .video_area_vid img {
     height: 100%;
@@ -339,8 +350,8 @@ p {
 }
 .playbtnn {
     position: absolute;
-    left: 30px;
-    bottom: 30px;
+    left: 112px;
+    bottom: 73px;
     background: rgb(243 243 243 / 96%);
     padding: 8px 12px;
     border-radius: 5px;
@@ -428,24 +439,19 @@ img{
 
 /*data management css*/
 .dataArea {
-    background: url(../image/dataslide1.jpg);
-    height: 450px;
+    background: url(../image/slider1.jpg);
+    height: 550px;
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.dataArea:after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(0 0 0 / 65%);
-    z-index: -1;
-}
+
 
 
 
@@ -456,13 +462,13 @@ img{
 }
 .dataText h2 {
     font-size: 50px;
-    margin-top: 60px;
     font-weight: 700;
+    text-shadow: 5px 2px 5px #000;
 }
 .dataText p {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 30px;
+    text-shadow: 5px 2px 5px #000;
 }
 .anothertext h3 {
     font-weight: 800;
@@ -522,24 +528,19 @@ img{
 
 /*blokchain css*/
 .blockchainarea {
-    background: url(../image/blockchain1.jpg);
-    height: 450px;
+    background: url(../image/slider1.jpg);
+    height: 550px;
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.blockchainarea:after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(0 0 0 / 65%);
-    z-index: -1;
-}
+
 .howwetitle h2 {
     font-weight: 700;
     text-transform: uppercase;
@@ -553,7 +554,7 @@ img{
 }
 .webuild {
     background: #f7f7f7;
-    background-image: url(../image/blockchain2.jpg);
+    background-image: url(../image/slider1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -564,7 +565,7 @@ img{
 .webuild:after {
   content: "";
   position: absolute;
-  background: rgb(0 0 0 / 76%);
+  background: rgb(0 0 0 / 36%);
   height: 100%;
   width: 100%;
   left: 0;
@@ -585,6 +586,7 @@ img{
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
+    min-height: 230px;
 }
 .ourmotto p {
     font-weight: 600;
@@ -653,24 +655,19 @@ img{
 
 /*corporate page css*/
 .corporate {
-    background: url(../image/video2.jpg);
-    height: 450px;
+    background: url(../image/slider1.jpg);
+    height: 550px;
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.corporate:after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(0 0 0 / 65%);
-    z-index: -1;
-}
+
 
 .bottomtext ul li{
     list-style: none;
@@ -686,72 +683,93 @@ img{
 
 /* career css */
 .career {
-    background: url(../image/video3.jpg);
-    height: 450px;
+    background: url(../image/slider1.jpg);
+    height: 550px;
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.career:after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(0 0 0 / 65%);
-    z-index: -1;
-}
+
 
 
 
 
 .contact {
-    background: url(../image/africa-15428_1920.jpg);
-    height: 450px;
+    background: url(../image/slider1.jpg);
+    height: 550px;
     background-size: cover;
     background-attachment: scroll;
     background-position: center center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.contact:after {
-    content: "";
+
+
+.slideboxx {
+    position: relative;
+}
+.slideboxx span {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: rgb(0 0 0 / 65%);
-    z-index: -1;
+    top: 5px;
+    right: 13px;
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 1px 0px #827d55;
+    z-index: 9999;
+}
+.slideboxx{
+    width: 400px;
+}
+.modalNewsletter .form-control {
+    padding: 23px;
+    border-color: #ffc800;
 }
 
+.modalNewsletter .btn-primary:hover {
+    background-color: #ffc800 !important;
+    color: #333;
+}
 
+.anothertext .btn-primary:hover {
+    background-color: #ffc800 !important;
+    color: #333;
+}
+.newsletter_icon svg {
+    color: black;
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+.modalNewsletter {
+    padding: 0 10px;
+}
+.navbar-brand img {
+    margin-top: -14px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.metaliclogo{
+    transition: all .4s ease-in-out;
+}
+.metaliclogo img {
+    width: 70%;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+}
+.metaliclogo img:hover {
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
 
 
 
@@ -772,9 +790,12 @@ img{
 }
 .sliderr {
     height: 300px;
+    background: #bac5d1;
 }
 .titile_area h3 {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
 }
 .title_img img {
     height: 300px;
@@ -783,7 +804,36 @@ img{
 nav.navbar.navbar-expand-md.bg-dark.navbar-dark {
     z-index: 99;
 }
+
+.btn {
+    padding: 8px 12px !important;
 }
+.padding-80 {
+    padding: 40px 0;
+}
+.title_section, .titile_area{
+    margin-bottom: 30px;
+}
+.dataText h2 {
+    font-size: 35px;
+}
+.slideboxx {
+    width: 352px !important;
+}
+.slideboxx .card {
+    background: rgb(255 200 0 / 92%);
+}
+.disclimer{
+    text-align: left !important;
+}
+.metaliclogo img {
+    width: 100%;
+}
+
+
+}
+
+
 
 @media only screen and (max-width: 568px) and (min-width: 320px){
 
@@ -803,14 +853,50 @@ nav.navbar.navbar-expand-md.bg-dark.navbar-dark {
 
 .sliderr {
     height: 300px;
+    background: #bac5d1;
 }
 .titile_area h3 {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
 }
 .title_img img {
     height: 300px;
 }
+
+.btn {
+    padding: 8px 12px !important;
 }
+.padding-80 {
+    padding: 40px 0;
+}
+.title_section, .titile_area{
+    margin-bottom: 30px;
+}
+
+.dataText h2 {
+    font-size: 35px;
+}
+.slideboxx {
+    width: 332px;
+}
+.slideboxx .card {
+    background: rgb(255 200 0 / 92%);
+}
+
+.disclimer{
+    text-align: left !important;
+}
+.metaliclogo img {
+    width: 100%;
+}
+
+
+}
+
+/* responsive end here */
+
+
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -818,4 +904,38 @@ nav.navbar.navbar-expand-md.bg-dark.navbar-dark {
     background-color: #FFC107;
     border: 1px solid transparent;
     border-radius: .25rem;
+}
+
+.visionn_text h5 {
+    color: #ffc800;
+    text-transform: uppercase;
+}
+.goldentitle h2{
+    color: #ffc800 !important;
+}
+
+.bottomtext ul {
+    padding-left: 0px;
+}
+
+.bannerg {
+    margin-top: 158px;
+}
+
+.btn-outline-warning {
+    border-color: #ffc107 !important;
+}
+.subscribe_text h5 span img {
+    width: 20px;
+    margin-top: -8px;
+}
+
+.restinfo p svg {
+    margin-right: 10px;
+}
+.restinfo p {
+    margin-bottom: 5px;
+}
+.contactfommr .form-group label {
+    font-weight: 700;
 }
